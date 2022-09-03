@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -8,17 +9,25 @@ function Sidebar() {
       <hr />
 
       <ul className="sidebar-links">
-        <li className="active" >
-          <span className="material-icons-outlined">home</span>
-          <span className="link-text" >Dashboard</span>
+        <li >
+          <Link to='/' className="active" >
+           <span className="material-icons-outlined">home</span>
+           <span className="link-text" >Dashboard</span>
+          </Link>
+          
         </li>
         <li>
-          <span className="material-icons-outlined">storefront</span>
-          <span className="link-text" >Orders</span>
+          <Link to='/orders' >
+           <span className="material-icons-outlined">storefront</span>
+           <span className="link-text" >Orders</span>
+          </Link>
+          
         </li>
         <li>
-          <span className="material-icons-outlined">inventory</span>
-          <span className="link-text" > Products</span>
+          <Link to='/products' >
+           <span className="material-icons-outlined">inventory</span>
+           <span className="link-text" > Products</span>
+          </Link>
         </li>
       </ul>
     </aside>

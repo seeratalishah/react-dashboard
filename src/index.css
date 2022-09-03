@@ -2,6 +2,7 @@
   --text-color: #fffffe;
   --primary-color: #7f5af0; 
   --bg-color: #16161a;
+  --bg-color-secondary: #242629;
 }
 
 *{
@@ -21,6 +22,8 @@ a{
 /* CSS files */
 @import './styles/Navbar.css';
 @import './styles/Sidebar.css';
+@import './styles/Dashboard.css';
+@import './styles/DashboardContent.css';
 
 
 

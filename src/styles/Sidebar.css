@@ -2,7 +2,7 @@ aside{
     background: var(--bg-color);
     padding: 2.5rem 1.5rem;
     width: 20%;
-    height: 92.1vh;
+    height: calc(100vh - 56px);
 }
 
 aside p{
@@ -16,18 +16,18 @@ aside hr{
     margin-bottom: 1.5rem;
 }
 
-aside ul{
+aside ul li{
+    margin-bottom: 0.6rem;
     
 }
 
-aside ul li{
+aside ul li a{
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.3rem 0.3rem;
-    margin-bottom: 0.6rem;
-    border-radius: 0.3rem;
     cursor: pointer;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.3rem;   
 }
 
 aside ul li span{
@@ -38,6 +38,6 @@ aside .link-text{
       font-size: 1rem; 
 }
 
-aside .active, aside li:hover{
+aside .active, aside a:hover{
     background: var(--primary-color);
 }
