@@ -1,9 +1,12 @@
-
+import {Routes, Route} from 'react-router-dom';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <div className="App">
-     <h1>React Dashboard</h1>
+     <Routes>
+      <Route path='/' element={<Dashboard />} />
+     </Routes>
     </div>
   );
 }
