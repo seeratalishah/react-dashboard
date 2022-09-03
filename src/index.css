@@ -1,9 +1,11 @@
 :root{
   --text-color: #fffffe;
-  --primary-color: #7f5af0; 
+  --primary-color: #7f5af0;
+  --secondary-color: #2cb67d; 
   --bg-color: #16161a;
   --bg-color-secondary: #242629;
   --text-color-secondary: #94a1b2;
+
 }
 
 *{
@@ -27,6 +29,8 @@ a{
 @import './styles/Sidebar.css';
 @import './styles/Dashboard.css';
 @import './styles/DashboardContent.css';
+@import './styles/ProductCard.css';
+@import './styles/Card.css';
 
 
 

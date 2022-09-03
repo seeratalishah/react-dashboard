@@ -10,7 +10,7 @@ function Sidebar() {
 
       <ul className="sidebar-links">
         <li >
-          <NavLink to='/' className="active" >
+          <NavLink to='/' >
            <span className="material-icons-outlined">home</span>
            <span className="link-text" >Dashboard</span>
           </NavLink>

@@ -1,0 +1,10 @@
+.product-card{
+    border: 1px solid orange;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+.product-card img{
+    width: 10rem;
+    height: 10rem;
+}
