@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -10,24 +10,24 @@ function Sidebar() {
 
       <ul className="sidebar-links">
         <li >
-          <Link to='/' className="active" >
+          <NavLink to='/' className="active" >
            <span className="material-icons-outlined">home</span>
            <span className="link-text" >Dashboard</span>
-          </Link>
+          </NavLink>
           
         </li>
         <li>
-          <Link to='/orders' >
+          <NavLink to='/orders' >
            <span className="material-icons-outlined">storefront</span>
            <span className="link-text" >Orders</span>
-          </Link>
+          </NavLink>
           
         </li>
         <li>
-          <Link to='/products' >
+          <NavLink to='/products' >
            <span className="material-icons-outlined">inventory</span>
            <span className="link-text" > Products</span>
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </aside>
