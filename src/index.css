@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&family=Roboto:wght@700&display=swap');
 :root{
   --text-color: #fffffe;
   --primary-color: #7f5af0;
@@ -5,6 +6,9 @@
   --bg-color: #16161a;
   --bg-color-secondary: #242629;
   --text-color-secondary: #94a1b2;
+
+  --secondary-font: 'Roboto', sans-serif;
+  --primary-font: 'Roboto Serif', serif;
 
 }
 
@@ -31,6 +35,9 @@ a{
 @import './styles/DashboardContent.css';
 @import './styles/ProductCard.css';
 @import './styles/Card.css';
+@import './styles/Logo.css';
+@import './styles/Login.css';
+@import './styles/UserProfile.css';
 
 
 

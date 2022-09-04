@@ -12,17 +12,19 @@ nav span{
     line-height: 1.5;
 }
 
-nav .logo{
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+nav button{
+    padding: 0.5rem 1rem;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 0.2rem;
+    border: none;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    transition: 0.3s all ease-out;
+}
+
+nav button:hover{
+    background: var(--bg-color);
     
 }
 
-nav .logo span{
-    color: var(--text-color);
-}
-
-nav .logo svg{
-    fill: var(--text-color);
-}

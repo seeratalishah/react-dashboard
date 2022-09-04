@@ -1,0 +1,77 @@
+.login-page{
+    background: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page form{
+    background: var(--text-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+form .input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+/* Elements style */
+
+.login-page .logo{
+     margin-bottom: 1.5rem;
+}
+
+.login-page h1{
+    margin-bottom: 1.5rem;
+}
+
+.input-container label{
+    font-family: var(--secondary-font);
+    color: var(--text-color-secondary);
+}
+
+.input-container input{
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: 1px solid var(--text-color-secondary);
+}
+
+.input-container input:focus{
+    outline-color: var(--primary-color);
+    border-color: var(--primary-color)
+}
+
+.login-page button{
+    width: 100%;
+    padding-block: 0.5rem;
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    background: var(--secondary-color);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.login-page button:hover{
+    background: var(--bg-color);
+}
+
+.login-page .error{
+    color: rgba(255, 0, 0, 0.7);
+    margin-top: 10px;
+    font-size: 14px;
+   
+}

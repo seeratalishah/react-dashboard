@@ -1,7 +1,11 @@
 import React from "react";
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from "react-router-dom";
 
 function Sidebar() {
+  const location =useLocation();
+  console.log(location);
+// location.pathname === /dashboard
+
   return (
     <aside>
       <p>Seerat's Dashboard</p>
@@ -9,24 +13,28 @@ function Sidebar() {
       <hr />
 
       <ul className="sidebar-links">
-        <li >
-          <NavLink to='/' >
-           <span className="material-icons-outlined">home</span>
-           <span className="link-text" >Dashboard</span>
+        <li>
+          <NavLink to="/dashboard" className={({isActive})=> location.pathname === '/dashboard'? 'active' : '' } >
+            <span className="material-icons-outlined">home</span>
+            <span className="link-text">Dashboard</span>
           </NavLink>
-          
         </li>
         <li>
-          <NavLink to='/orders' >
-           <span className="material-icons-outlined">storefront</span>
-           <span className="link-text" >Orders</span>
+          <NavLink to="/dashboard/orders">
+            <span className="material-icons-outlined">storefront</span>
+            <span className="link-text">Orders</span>
           </NavLink>
-          
         </li>
         <li>
-          <NavLink to='/products' >
-           <span className="material-icons-outlined">inventory</span>
-           <span className="link-text" > Products</span>
+          <NavLink to="/dashboard/products">
+            <span className="material-icons-outlined">inventory</span>
+            <span className="link-text"> Products</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/dashboard/profile">
+            <span class="material-icons-outlined">account_circle</span>
+            <span className="link-text"> User Profile</span>
           </NavLink>
         </li>
       </ul>

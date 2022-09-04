@@ -1,0 +1,16 @@
+.user-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile form{
+  width: 400px;
+  background: var(--color-bg);
+  padding: 1rem;
+}
+
+.user-profile > .input-container{
+    display: flex;
+    gap: 1rem;
+}

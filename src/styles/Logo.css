@@ -1,0 +1,22 @@
+.logo{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    
+}
+
+.logo span{
+    color: var(--text-color);
+}
+
+.logo svg{
+    fill: var(--text-color);
+}
+
+.login-page .logo span{
+    color: var(--bg-color);
+}
+
+ .login-page .logo svg{
+    fill: var(--bg-color);
+}
