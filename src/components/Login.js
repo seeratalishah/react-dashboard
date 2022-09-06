@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Logo from './Logo';
 import {useNavigate} from 'react-router-dom';
 
-function Login({setIsLoggedIn}) {
+function Login({setIsLoggedIn, myEmail, myPassword}) {
 
     const [email, setEmail] = useState('seeratalyshah@gmail.com');
     const [password, setPassword] = useState('helloworld123');
@@ -10,8 +10,6 @@ function Login({setIsLoggedIn}) {
 
     const navigate = useNavigate();
 
-    const myEmail = 'seeratalyshah@gmail.com';
-    const myPassword = 'helloworld123';
 
     const handleLogin = (e)=>{
           e.preventDefault();

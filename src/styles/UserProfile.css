@@ -1,16 +1,76 @@
 .user-profile{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .user-profile form{
-  width: 400px;
-  background: var(--color-bg);
-  padding: 1rem;
+    background: var(--text-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
 }
 
-.user-profile > .input-container{
+form .input-container{
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+/* Elements style */
+
+.user-profile .logo{
+     margin-bottom: 1.5rem;
+}
+
+.user-profile h1{
+    margin-bottom: 1.5rem;
+}
+
+.input-container label{
+    font-family: var(--secondary-font);
+    color: var(--text-color-secondary);
+}
+
+.input-container input{
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: 1px solid var(--text-color-secondary);
+}
+
+.input-container input:focus{
+    outline-color: var(--primary-color);
+    border-color: var(--primary-color)
+}
+
+.user-profile button{
+    width: 100%;
+    padding-block: 0.5rem;
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    background: var(--secondary-color);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.user-profile button:hover{
+    background: var(--bg-color);
+}
+
+.user-profile .error{
+    color: rgba(255, 0, 0, 0.7);
+    margin-top: 10px;
+    font-size: 14px;
+   
 }

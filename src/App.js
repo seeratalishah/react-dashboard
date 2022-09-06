@@ -12,6 +12,8 @@ import UserProfile from './components/UserProfile';
 function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [myEmail, setMyEmail] = useState('seeratalyshah@gmail.com');
+  const [myPassword, setMyPassword] = useState('hello123');
   
   const location = useLocation();
   const navigate = useNavigate();
@@ -28,14 +30,14 @@ function App() {
   return (
     <div className="App">
      <Routes>
-      <Route path='/' element={<Login setIsLoggedIn={setIsLoggedIn} />} ></Route> 
+      <Route path='/' element={<Login setIsLoggedIn={setIsLoggedIn} myEmail={myEmail} myPassword={myPassword} />} ></Route> 
       
 
       <Route path='/dashboard' element={<Dashboard setIsLoggedIn={setIsLoggedIn} />} >
        <Route index element={<DashboardContent   />}></Route>
        <Route path='/dashboard/orders' element={<Orders />} ></Route>
        <Route path='/dashboard/products' element={<Products />} ></Route>
-       <Route path='/dashboard/profile' element={<UserProfile />}></Route>
+       <Route path='/dashboard/profile' element={<UserProfile myEmail={myEmail} setMyEmail={setMyEmail} myPassword={myPassword} setMyPassword={setMyPassword} />} s ></Route>
       </Route>
 
      </Routes>

@@ -7,11 +7,9 @@ import Sidebar from './Sidebar';
 function Products() {
   return (
     <div>
-        <Navbar />
-        <div className="content-container">
-          <Sidebar />
+       
           <ProductsContent />
-        </div>
+        
         
     </div>
   )
