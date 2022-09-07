@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Logo from './Logo';
 import {useNavigate} from 'react-router-dom';
 
-function Login({setIsLoggedIn, myEmail, myPassword}) {
+function Login({setIsLoggedIn, myEmail, myPassword, data}) {
+
 
     const [email, setEmail] = useState('seeratalyshah@gmail.com');
     const [password, setPassword] = useState('helloworld123');
